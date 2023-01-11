@@ -1,10 +1,12 @@
-/*************Test******************/
-var test = require('unit.js');
-var str = 'Hello, world!';
+import assert from 'assert';
+import helloWorld from '../src/scripts/hello-world';
 
-test.string(str).startsWith('Hello');
+describe('helloWorld', () => {
 
-if (test.string(str).startsWith('Hello')) {
-  console.log('Passed');
-}
-/***********************************/
+  describe('#init()', () => {
+
+    it('should return hello world', () => {
+      assert.equal(helloWorld.init(), 'hello world');
+    });
+  });
+});
