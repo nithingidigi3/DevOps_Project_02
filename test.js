@@ -1,5 +1,5 @@
 import assert from 'assert';
-import helloWorld from '../src/scripts/hello-world';
+import helloWorld from '../hello-world';
 
 describe('helloWorld', () => {
 
